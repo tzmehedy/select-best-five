@@ -111,12 +111,12 @@
                           </div>
                           <div class="h-50 w-75 bg-dark">
                             <h3 class="text-warning text-center" >Budget</h3>
-                            <p class="text-light">Per Player: <input id="perPlayerAmount" class="bg-dark border border-light text-light" type="text"> </p>
+                            <p class="text-light">Per Player: <input id="per-Player-Amount" class="bg-dark border border-light text-light" type="text"> </p>
                             
                             <div class="px-3 py-3">
-                              <button type="button" class="btn btn-primary mx-auto w-100 " onclick="addSelect('Neyamr Jr',this)">Calculate</button>
+                              <button type="button" class="btn btn-primary mx-auto w-100 " onclick="calculate()">Calculate</button>
                             </div>
-                            <pre class="text-light">Player Expenses:     $<span>0</span></pre>
+                            <pre class="text-light">Player Expenses:     $<span id="player-expenses">0</span></pre>
                             <pre class="text-light">Manager:    <input class="bg-dark border border-light text-light" type="text"></pre>
                             <pre class="text-light">Coach:      <input class="bg-dark border border-light text-light" type="text"> </pre>
 

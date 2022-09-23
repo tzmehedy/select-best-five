@@ -13,4 +13,10 @@ const addSelect=(data,button)=>{
     }
     button.setAttribute('disabled',true); 
 }
- 
+const calculate=()=>{
+    const perPlayerAmount=document.getElementById('per-Player-Amount').value;
+    const selectedLength=document.querySelectorAll('.selected');
+    const playerExpenses=document.getElementById('player-expenses');
+    const playerExpensesTotal= parseFloat(perPlayerAmount)*selectedLength.length;
+    playerExpenses.innerText=playerExpensesTotal;
+}
