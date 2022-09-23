@@ -117,12 +117,12 @@
                               <button type="button" class="btn btn-primary mx-auto w-100 " onclick="calculate()">Calculate</button>
                             </div>
                             <pre class="text-light">Player Expenses:     $<span id="player-expenses">0</span></pre>
-                            <pre class="text-light">Manager:    <input class="bg-dark border border-light text-light" type="text"></pre>
-                            <pre class="text-light">Coach:      <input class="bg-dark border border-light text-light" type="text"> </pre>
+                            <pre class="text-light">Manager:    <input id="manager-cost" class="bg-dark border border-light text-light" type="text"></pre>
+                            <pre class="text-light">Coach:      <input id="coach-cost" class="bg-dark border border-light text-light" type="text"> </pre>
 
                             
-                              <button type="button" class="btn btn-primary mx-auto w-100 " onclick="addSelect('Neyamr Jr',this)">Calculate Total</button>
-                              <pre class="text-light">Total:            $<span>0</span></pre>
+                              <button type="button" class="btn btn-primary mx-auto w-100 " onclick="calculateTotal()">Calculate Total</button>
+                              <pre class="text-light">Total:            $<span id="total-amount">0</span></pre>
                             
                             
 

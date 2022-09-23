@@ -20,3 +20,17 @@ const calculate=()=>{
     const playerExpensesTotal= parseFloat(perPlayerAmount)*selectedLength.length;
     playerExpenses.innerText=playerExpensesTotal;
 }
+
+const calculateTotal=()=>{
+    const playerExpensesString=document.getElementById('player-expenses').innerText;
+    const playerExpenses=parseFloat(playerExpensesString);
+    const managerCost=document.getElementById('manager-cost').value;
+    const coachCost=document.getElementById('coach-cost').value;
+    const total=document.getElementById('total-amount');
+    console.log(playerExpenses,managerCost,coachCost,total);
+    const totalAmount=playerExpenses+parseFloat(managerCost)+parseFloat(coachCost);
+    total.innerText=totalAmount;
+
+
+
+}
